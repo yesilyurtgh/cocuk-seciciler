@@ -1,0 +1,53 @@
+.s211{
+    display: block;
+}
+
+/*b21 claslı divin içindeki ilk çocuk olan spanı seç */
+.b21 span:first-child{
+    background-color: green;
+}
+/*b21 claslı divin içindeki son çocuk olan divi seç */
+.b21 div:last-child{
+    background-color: blue;
+}
+
+/* bb2 claslı etiketin içinde son çocuk olan divi seç */
+.bb2 div:last-child{
+    background-color: yellow;
+}
+/*b21 claslı divin içindeki ilk div olan çocuğu seç */
+.b21 div:first-of-type{
+    background-color: red;
+    color: white
+}
+/*bb3 claslı divin içindeki 2. divi seçtim */
+.bb3 div:nth-child(2){
+    background-color: purple;
+}
+/*bb3 claslı divin içindeki tek sıradaki divleri seçtim */
+.bb3 div:nth-child(odd){
+    background-color: orange;
+}
+/*bb3 claslı divin içindeki 3. sıra ve sonraki divleri seçtim */
+.bb3 div:nth-child(n+3){
+    background-color: yellow;
+}
+
+/*bb3 claslı divin içindeki tek sıradaki divleri seçtim */
+.bb3 div:nth-of-type(odd){
+    background-color: green;
+}
+/*bb3 claslı divin içindeki 
+div4 ve div8 arasındaki çift sayılı divleri(4,6,8. divler)seçtim */
+.bb3 div:nth-of-type(n+4):nth-of-type(-n+8):nth-of-type(even){
+    background-color: red;
+    color: white;
+}
+/*bb3 claslı divin içindeki 9. divi seçtim*/
+.bb3 div:nth-last-child(1){
+    background-color: white;
+}
+
+.bb3 div:nth-last-of-type(n+3):nth-last-of-type(-n+7):nth-last-of-type(odd){
+    background-color: aqua;
+}
